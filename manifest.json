@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "vendors": {
+    "activitywatch": {
+      "display_name": "ActivityWatch",
+      "description": "Tracks which applications and windows you use and for how long, providing detailed activity timelines.",
+      "version": "0.13.1",
+      "size_mb": 275,
+      "size_display": "275 MB",
+      "tag": "activitywatch-v0.13.1",
+      "asset": "activitywatch.zip",
+      "install_subdir": "activitywatch",
+      "primary_url": "https://github.com/SoufBouda/pixelmap-vendors/releases/download/activitywatch-v0.13.1/activitywatch.zip",
+      "fallback_url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.1/activitywatch-v0.13.1-windows-x86_64.zip",
+      "detect": {
+        "exe_name": "aw-qt.exe",
+        "process_names": ["aw-qt", "aw-server"],
+        "registry_keys": [
+          "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ActivityWatch",
+          "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ActivityWatch"
+        ],
+        "search_paths": [
+          "{localappdata}\\activitywatch",
+          "{commonpf}\\ActivityWatch",
+          "{commonpf64}\\ActivityWatch"
+        ]
+      }
+    },
+    "screenpipe": {
+      "display_name": "Screenpipe",
+      "description": "Captures screen content with OCR for searchable text extraction across all your applications.",
+      "version": "0.2.0",
+      "size_mb": 156,
+      "size_display": "156 MB",
+      "tag": "screenpipe-v0.2.0",
+      "asset": "screenpipe.zip",
+      "install_subdir": "screenpipe",
+      "primary_url": "https://github.com/SoufBouda/pixelmap-vendors/releases/download/screenpipe-v0.2.0/screenpipe.zip",
+      "fallback_url": "https://github.com/mediar-ai/screenpipe/releases/latest",
+      "detect": {
+        "exe_name": "screenpipe.exe",
+        "process_names": ["screenpipe"],
+        "registry_keys": [
+          "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Screenpipe",
+          "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Screenpipe"
+        ],
+        "search_paths": [
+          "{commonpf}\\Screenpipe",
+          "{commonpf64}\\Screenpipe"
+        ]
+      }
+    },
+    "windrecorder": {
+      "display_name": "Windrecorder",
+      "description": "Records your screen as video with searchable OCR-indexed playback for visual recall.",
+      "version": "1.0.0",
+      "size_mb": 972,
+      "size_display": "972 MB",
+      "tag": "windrecorder-v1.0.0",
+      "asset": "windrecorder.zip",
+      "install_subdir": "Windrecorder",
+      "primary_url": "https://github.com/SoufBouda/pixelmap-vendors/releases/download/windrecorder-v1.0.0/windrecorder.zip",
+      "fallback_url": "https://github.com/yuka-friends/Windrecorder/releases/latest",
+      "detect": {
+        "exe_name": "start_app.bat",
+        "process_names": ["windrecorder", "record_screen"],
+        "registry_keys": [],
+        "search_paths": [
+          "{commonpf}\\Windrecorder",
+          "{commonpf64}\\Windrecorder"
+        ]
+      }
+    }
+  }
+}
